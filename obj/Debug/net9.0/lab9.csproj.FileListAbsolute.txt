@@ -12,3 +12,4 @@
 /Users/deaddymanny/RiderProjects/lab9/obj/Debug/net9.0/lab9.pdb
 /Users/deaddymanny/RiderProjects/lab9/obj/Debug/net9.0/lab9.genruntimeconfig.cache
 /Users/deaddymanny/RiderProjects/lab9/obj/Debug/net9.0/ref/lab9.dll
+/Users/deaddymanny/RiderProjects/lab9/obj/Debug/net9.0/lab9.sourcelink.json

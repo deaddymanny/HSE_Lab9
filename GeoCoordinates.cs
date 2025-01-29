@@ -43,6 +43,8 @@ public class GeoCoordinates
     // полагаю, что используемые классы лучше инициализировать вначале
     public GeoCoordinates() // строчки кода, инициализирующиеся при создании нового объекта для подсчета их количества
     {
+        latitude = 0;
+        longtitude = 0;
         instanceCount++;
     }
     public void Initialize(int randomOrNo = 0) // определение координат точки 
@@ -68,7 +70,7 @@ public class GeoCoordinates
 
     public string Show() // вывод координат точки
     {
-        return ($"{this.Longtitude};{this.Latitude}");
+        return ($"{this.Latitude};{this.Longtitude}");
     }
     // distancebetweentwo+
     // append +
@@ -110,8 +112,11 @@ public class GeoCoordinates
     
     public void Append() // увеличение широты и долготы точки на 0.01
     {
-        Latitude += 0.01;
-        Longtitude += 0.01;
+        if (Latitude != 90 || Longtitude != 180)
+        {
+            Latitude += 0.01;
+            Longtitude += 0.01;
+        }
     }
 
     public void Reverse()
