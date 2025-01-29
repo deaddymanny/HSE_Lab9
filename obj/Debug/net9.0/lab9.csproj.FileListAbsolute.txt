@@ -1,0 +1,14 @@
+/Users/deaddymanny/RiderProjects/lab9/bin/Debug/net9.0/lab9
+/Users/deaddymanny/RiderProjects/lab9/bin/Debug/net9.0/lab9.deps.json
+/Users/deaddymanny/RiderProjects/lab9/bin/Debug/net9.0/lab9.runtimeconfig.json
+/Users/deaddymanny/RiderProjects/lab9/bin/Debug/net9.0/lab9.dll
+/Users/deaddymanny/RiderProjects/lab9/bin/Debug/net9.0/lab9.pdb
+/Users/deaddymanny/RiderProjects/lab9/obj/Debug/net9.0/lab9.GeneratedMSBuildEditorConfig.editorconfig
+/Users/deaddymanny/RiderProjects/lab9/obj/Debug/net9.0/lab9.AssemblyInfoInputs.cache
+/Users/deaddymanny/RiderProjects/lab9/obj/Debug/net9.0/lab9.AssemblyInfo.cs
+/Users/deaddymanny/RiderProjects/lab9/obj/Debug/net9.0/lab9.csproj.CoreCompileInputs.cache
+/Users/deaddymanny/RiderProjects/lab9/obj/Debug/net9.0/lab9.dll
+/Users/deaddymanny/RiderProjects/lab9/obj/Debug/net9.0/refint/lab9.dll
+/Users/deaddymanny/RiderProjects/lab9/obj/Debug/net9.0/lab9.pdb
+/Users/deaddymanny/RiderProjects/lab9/obj/Debug/net9.0/lab9.genruntimeconfig.cache
+/Users/deaddymanny/RiderProjects/lab9/obj/Debug/net9.0/ref/lab9.dll
