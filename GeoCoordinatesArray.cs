@@ -17,8 +17,7 @@ public class GeoCoordinatesArray(GeoCoordinates[] geoCoordinates)
             {
                 array[i] = new GeoCoordinates();
                 array[i].Initialize();
-                Console.Clear();
-                Console.WriteLine("\x1b[3J");
+                InputTools.ClearLogs();
             }
         }
         else

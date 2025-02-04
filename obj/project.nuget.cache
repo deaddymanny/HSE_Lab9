@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DhbZpIyhjuU=",
+  "dgSpecHash": "CDcRQhr/TCg=",
   "success": true,
   "projectFilePath": "/Users/deaddymanny/RiderProjects/lab9/lab9.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/deaddymanny/.nuget/packages/mstest.testframework/3.6.1/mstest.testframework.3.6.1.nupkg.sha512"
+  ],
   "logs": []
 }

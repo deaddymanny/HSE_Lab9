@@ -93,9 +93,13 @@ class Program
                     Console.WriteLine($"На данный момент было создано {GeoCoordinates.InstanceCount - 1} точек.");
                     break;
                 }
+                case 12:
+                {
+                    break;
+                }
             }
             MenuIntroduction();
-            menuChoice = InputTools.ReadInt("", "", -1);
+            menuChoice = InputTools.ReadInt("", "Ответом должно быть целое число больше нуля. Вызовите меню с помощью 12.", -1);
             InputTools.ClearLogs();
         } while (menuChoice != 0);
            
@@ -105,6 +109,8 @@ class Program
         Console.WriteLine("Лабораторная работа №9");
         Console.WriteLine("Вариант №6 - Географические координаты");
         Console.WriteLine("by Ростислав Катаргин (РИС 24-4-7)");
+        Console.WriteLine("--------------------------------------");
+        Console.WriteLine($"На данный момент выбрана точка {currentSelection.Show()}");
         Console.WriteLine("--------------------------------------");
         Console.WriteLine("Выберите желаемую операцию:");
         Console.WriteLine("");
@@ -120,7 +126,6 @@ class Program
         Console.WriteLine("9. Сравнить, находятся ли точки на разных меридианах.");
         Console.WriteLine("10. Сравнить расстояние всех точек массива к 'Острову Ноль'.");
         Console.WriteLine("11. Подсчитать количество созданных географических точек.");
-        Console.WriteLine($"На данный момент выбрана точка {currentSelection.Show()}");
     }
     static void Main(string[] args)
     {
