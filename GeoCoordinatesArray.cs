@@ -73,5 +73,4 @@ public class GeoCoordinatesArray(GeoCoordinates[] geoCoordinates)
 
         return $"Ближайшим к Острову 'Ноль' оказалась точка {array[whatPointClosest].Show()} на расстоянии {closestDistanceToIsland}";
     }
-    
 }
