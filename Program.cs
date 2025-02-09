@@ -4,6 +4,7 @@ class Program
 {
     private static GeoCoordinates currentSelection = new GeoCoordinates();
     private static GeoCoordinatesArray currentArray;
+    
     static void Menu()
     {
         int menuChoice = 1;
@@ -36,7 +37,7 @@ class Program
                         "Выберите нужную вам точку из массива.",
                         "",
                         0,
-                        currentArray.Length())-1);
+                        currentArray.Length()+1)-1);
                     distance = GeoCoordinates.CalculateDistance(currentSelection, secondPoint);
                     Console.WriteLine($"Расстояние между {currentSelection.Show()} и {secondPoint.Show()} = {distance}");
                     break;

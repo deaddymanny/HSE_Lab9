@@ -5,7 +5,31 @@ namespace lab9;
 public class GeoCoordinatesArray(GeoCoordinates[] geoCoordinates)
 {
     private GeoCoordinates[] array = geoCoordinates;
+    
+    public void ManuallyChangeArray(int value)
+    {
+        if (value < 0)
+        {
+            throw new IndexOutOfRangeException();
+        }
+        this.array = new GeoCoordinates[value];
+    }
+    
+    public GeoCoordinates this [int i]
+    {
+        get => this.array[i];
 
+        set
+        {
+            if (i < 0)
+            {
+                throw new IndexOutOfRangeException("Выбранный элемент не может быть меньше 0");
+            }
+            this.array[i] = value;
+        }
+        
+    }
+    
     public void Initialize(int randomOrNo = 0)
     {
         array = new GeoCoordinates[InputTools.ReadInt("Сколько точек вы желаете добавить в массив?",
@@ -53,7 +77,12 @@ public class GeoCoordinatesArray(GeoCoordinates[] geoCoordinates)
 
     public GeoCoordinates ReturnElement(int elementToReturn)
     {
-        return array[elementToReturn];
+        if (elementToReturn >= 0 && elementToReturn < array.Length)
+        {
+            return array[elementToReturn];
+        }
+
+        throw new IndexOutOfRangeException();
     }
 
     public string CompareToIslandZero()
@@ -73,4 +102,5 @@ public class GeoCoordinatesArray(GeoCoordinates[] geoCoordinates)
 
         return $"Ближайшим к Острову 'Ноль' оказалась точка {array[whatPointClosest].Show()} на расстоянии {closestDistanceToIsland}";
     }
+    
 }

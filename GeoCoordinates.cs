@@ -15,7 +15,6 @@ public class GeoCoordinates
             {
                 throw new Exception("Неверные данные");
             }
-
             latitude = value;
         }
     }
@@ -119,11 +118,14 @@ public class GeoCoordinates
         }
     }
 
+    /// <summary>
+    /// "переворот" знаков кординат точки
+    /// </summary>
     public void Reverse()
     {
         Latitude *= -1;
         Longtitude *= -1;
-    } // "переворот" знаков кординат точки
+    }
 
     public bool OnEquator()
     {
@@ -146,6 +148,29 @@ public class GeoCoordinates
         }
         return ("Точка находится на нулевом меридиане.");
     }
+    
+    public Meridian WhatLongtitudeEnum() // проверка на каком меридиане находится точка
+    {
+        if (Longtitude > 0)
+        {
+            return Meridian.Eastern;
+        }
+        if (Longtitude < 0)
+        {
+            return Meridian.Western;
+        }
+        return Meridian.Zero;
+    }
+
+    // public void OutputMeridian(Meridian meridian)
+    // {
+    //     switch (meridian)
+    //     {
+    //         case Meridian.Eastern:
+    //             Console.WriteLine("Восточный")
+    //     }
+    // }
+    
 
     public static bool IsSameMeridian(GeoCoordinates point1, GeoCoordinates point2) // проверка находятся ли точки на
     // одном и том же меридиане
@@ -160,11 +185,12 @@ public class GeoCoordinates
     public static bool IsSameParallel(GeoCoordinates point1, GeoCoordinates point2) // проверка находятся ли точки
     // на одной и той же параллели
     {
-        if (point1.Latitude == point2.Latitude)
-        {
-            return true;
-        }
-        return false;
+        return point1.Latitude == point2.Latitude;
     }
-    
+
+    public void CopyData(GeoCoordinates whatToCopy)
+    {
+        this.Longtitude = whatToCopy.Longtitude;
+        this.Latitude = whatToCopy.Latitude;
+    }
 }
